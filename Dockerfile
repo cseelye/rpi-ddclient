@@ -13,5 +13,5 @@ RUN apt-get update && \
     rm --force --recursive /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN [ "cross-build-end" ]
 
-CMD [ "/usr/sbin/ddclient", "-daemon=300", "-foreground", "-verbose" "-noquiet" ]
+CMD [ "/usr/sbin/ddclient", "-daemon=300", "-foreground", "-debug", "-verbose", "-noquiet" ]
 
